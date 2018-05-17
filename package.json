@@ -1,0 +1,20 @@
+{
+  "name": "bitcoin-price",
+  "version": "1.0.0",
+  "description": "A minimal bitcoin price checking app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "ulimit -n 999999",
+    "start": "NODE_ENV=production node bin/www –nouse-idle-notification –max-old-space-size=8192 –expose-gc"
+  },
+  "author": "Peter Gess",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.3"
+  }
+}
